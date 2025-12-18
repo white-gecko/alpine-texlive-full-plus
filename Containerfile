@@ -5,6 +5,8 @@ RUN mkdir -p /usr/share/fonts/font-awesome && \
   cp /tmp/FontAwesome/FontAwesome.otf /usr/share/fonts/font-awesome
 RUN apk add texlive-full biber \
   font-awesome-free font-opensans \
+  font-urw-base35 \
+  msttcorefonts-installer \
   go-task && \
   fc-cache -vf && \
   ln -s /usr/bin/go-task /usr/bin/task
